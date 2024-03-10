@@ -9,6 +9,18 @@ namespace xeno_rat_client
 {
     class Encryption
     {
+
+        /// <summary>
+        /// Encrypts the input data using the provided key and returns the encrypted result.
+        /// </summary>
+        /// <param name="data">The data to be encrypted.</param>
+        /// <param name="Key">The key used for encryption.</param>
+        /// <returns>The encrypted byte array of the input <paramref name="data"/>.</returns>
+        /// <remarks>
+        /// This method encrypts the input data using the Advanced Encryption Standard (AES) algorithm with a 128-bit key size.
+        /// It generates a random initialization vector (IV) of 16 bytes and uses it along with the provided key to perform the encryption.
+        /// The encrypted data is returned as a byte array.
+        /// </remarks>
         public static byte[] Encrypt(byte[] data, byte[] Key)
         {
 
